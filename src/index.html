@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri App</title>
+  <script type="module" src="/main.js" defer></script>
+  <style>
+    .logo.vanilla:hover {
+      filter: drop-shadow(0 0 2em #ffe21c);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <p id="player_turn_text">Turno del jugador 1</p>
+  <div class="container">
+    <div id="sq-0-0" class="square" onclick="update_table(0, 0)"></div>
+    <div id="sq-0-1" class="square" onclick="update_table(0, 1)"></div>
+    <div id="sq-0-2" class="square" onclick="update_table(0, 2)"></div>
+    <div id="sq-1-0" class="square" onclick="update_table(1, 0)"></div>
+    <div id="sq-1-1" class="square" onclick="update_table(1, 1)"></div>
+    <div id="sq-1-2" class="square" onclick="update_table(1, 2)"></div>
+    <div id="sq-2-0" class="square" onclick="update_table(2, 0)"></div>
+    <div id="sq-2-1" class="square" onclick="update_table(2, 1)"></div>
+    <div id="sq-2-2" class="square" onclick="update_table(2, 2)"></div>
+  </div>
+  <button onclick="restart_game()">Reiniciar juego</button>
+</body>
+
+</html>
